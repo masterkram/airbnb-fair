@@ -1,0 +1,1 @@
+pyshacl -s ./shapes.ttl -m -i rdfs -a -j -f human ./AirBnb2024-csv.rdf
