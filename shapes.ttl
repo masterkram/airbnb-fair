@@ -1,7 +1,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema: <https://schema.org/> .
-@prefix acco: <https://w3id.org/italia/onto/ACCO/> .
+@prefix f4ut: <https://w3id.org/FAIR-course-UT/2024-2025/4/ont#> .
 
 # Shape for Accommodation
 <AccommodationShape> a sh:NodeShape ;
@@ -26,7 +26,7 @@
         sh:nodeKind sh:IRI ;
     ] ;
     sh:property [
-        sh:path acco:hasAccommodationOwner ;
+        sh:path f4ut:hasOwner ;
         sh:nodeKind sh:IRI ;
     ] .
 
