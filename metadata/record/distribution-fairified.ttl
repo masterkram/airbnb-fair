@@ -1,0 +1,49 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dcite: <http://purl.org/spar/datacite/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix language: <http://id.loc.gov/vocabulary/iso639-1/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sio: <http://semanticscience.org/resource/>.
+@prefix wd: <https://www.wikidata.org/wiki/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dis: <http://localhost:8080/distribution/>.
+@prefix n0: <http://localhost:8080/distribution/199275b3-b300-437b-a7a3-2bcd3371ab93#>.
+@prefix pro: <http://localhost:8080/profile/>.
+@prefix d: <http://localhost:8080/dataset/>.
+@prefix met: <http://localhost:8080/distribution/199275b3-b300-437b-a7a3-2bcd3371ab93/metrics/>.
+@prefix fdp: <https://w3id.org/fdp/fdp-o#>.
+
+dis:199275b3-b300-437b-a7a3-2bcd3371ab93
+    a dcat:Distribution, dcat:Resource;
+    dct:accessRights n0:accessRights;
+    dct:conformsTo pro:02c649de-c579-43bb-b470-306abdc808c7;
+    dct:description "Data Distribution";
+    dct:isPartOf d:490d722f-4475-4cee-bd75-177359c6b971;
+    dct:language language:en;
+    dct:license <http://purl.org/NET/rdflicense/cc-zero1.0>;
+    dct:publisher [ a foaf:Agent; foaf:name "University of Twente" ];
+    dct:title "Distribution";
+    sio:SIO_000628
+    met:445c0a70d1e214e545b261559e2842f4, met:5d27e854a9e78eb3f663331cd47cdc13;
+    rdfs:label "Distribution";
+    dcat:accessURL
+        <http://localhost:7200/resource?uri=http:%25252F%25252Fwww.openrdf.org%25252Fschema%25252Fsesame%252523nil&role=context>;
+    dcat:mediaType "application/sparql-results+json";
+    dcat:version "1.0.0";
+    fdp:metadataIdentifier n0:identifier;
+    fdp:metadataIssued "2024-11-02T21:14:19.113298804Z"^^xsd:dateTime;
+    fdp:metadataModified "2024-11-02T21:14:19.113298804Z"^^xsd:dateTime.
+met:445c0a70d1e214e545b261559e2842f4
+    sio:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt>;
+    sio:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt>.
+met:5d27e854a9e78eb3f663331cd47cdc13
+sio:SIO_000332 wd:Q8777; sio:SIO_000628 wd:Q8777.
+n0:accessRights
+    a dct:RightsStatement;
+    dct:description "This resource has no access restriction".
+n0:identifier
+    a dcite:Identifier;
+    dct:identifier
+    "http://localhost:8080/distribution/199275b3-b300-437b-a7a3-2bcd3371ab93".
+pro:02c649de-c579-43bb-b470-306abdc808c7 rdfs:label "Distribution Profile".

@@ -14,14 +14,15 @@ The original dataset is located under `./original-dataset.csv`
 
 The fairified dataset is located under `./AirBnb2024-csv.rdf`
 
-## Semantic Data Model
+## Metadata
 
-The semantic data model is in rdf format and named `./AirBnbOnt.rdf`
+### Semantic Metadata Model
 
-## Metadata record of the project's FAIR Data Point
+The semantic data shapes are located under `./metadata/semantic-metadata-shapes`
 
-Located in `fair-data-point`
+### Metadata record of the project's FAIR Data Point
 
+Located in `./metadata/record`
 
 ## Attribution Statement
 

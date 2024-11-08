@@ -1,0 +1,54 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dcite: <http://purl.org/spar/datacite/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix language: <http://id.loc.gov/vocabulary/iso639-1/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sio: <http://semanticscience.org/resource/>.
+@prefix wd: <https://www.wikidata.org/wiki/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dis: <http://localhost:8080/distribution/>.
+@prefix n0: <http://localhost:8080/distribution/3b520970-2de4-4280-9d6d-c084a1a7a403#>.
+@prefix pro: <http://localhost:8080/profile/>.
+@prefix d: <http://localhost:8080/dataset/>.
+@prefix n1: <https://creativecommons.org/licenses/by/4.0/>.
+@prefix met: <http://localhost:8080/distribution/3b520970-2de4-4280-9d6d-c084a1a7a403/metrics/>.
+@prefix n2: <https://data.insideairbnb.com/germany/be/berlin/2024-06-22/>.
+@prefix fdp: <https://w3id.org/fdp/fdp-o#>.
+
+dis:3b520970-2de4-4280-9d6d-c084a1a7a403
+    a dcat:Distribution, dcat:Resource;
+    dct:accessRights n0:accessRights;
+    dct:conformsTo pro:02c649de-c579-43bb-b470-306abdc808c7;
+    dct:description "Original Airbnb Dataset For Berlin From InsideAirbnb";
+    dct:isPartOf d:490d722f-4475-4cee-bd75-177359c6b971;
+    dct:language language:en;
+    dct:license <http://purl.org/NET/rdflicense/cc-zero1.0>;
+    dct:publisher [ a foaf:Agent; foaf:name "Inside Airbnb" ];
+    dct:rights n1:;
+    dct:title "Original Airbnb Dataset";
+    sio:SIO_000628
+    met:445c0a70d1e214e545b261559e2842f4, met:5d27e854a9e78eb3f663331cd47cdc13;
+    rdfs:label "Original Airbnb Dataset";
+    dcat:accessURL n2:;
+    dcat:downloadURL
+        <https://data.insideairbnb.com/germany/be/berlin/2024-06-22/data/listings.csv.gz>;
+    dcat:format "csv";
+    dcat:mediaType "csv";
+    dcat:version "1.0.0";
+    fdp:metadataIdentifier n0:identifier;
+    fdp:metadataIssued "2024-11-08T20:13:06.683186628Z"^^xsd:dateTime;
+    fdp:metadataModified "2024-11-08T20:13:06.683186628Z"^^xsd:dateTime.
+met:445c0a70d1e214e545b261559e2842f4
+    sio:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt>;
+    sio:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt>.
+met:5d27e854a9e78eb3f663331cd47cdc13
+sio:SIO_000332 wd:Q8777; sio:SIO_000628 wd:Q8777.
+n0:accessRights
+    a dct:RightsStatement;
+    dct:description "This resource has no access restriction".
+n0:identifier
+    a dcite:Identifier;
+    dct:identifier
+    "http://localhost:8080/distribution/3b520970-2de4-4280-9d6d-c084a1a7a403".
+pro:02c649de-c579-43bb-b470-306abdc808c7 rdfs:label "Distribution Profile".

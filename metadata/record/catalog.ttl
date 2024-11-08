@@ -1,0 +1,59 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dcite: <http://purl.org/spar/datacite/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix language: <http://id.loc.gov/vocabulary/iso639-1/>.
+@prefix r3d: <http://www.re3data.org/schema/3-0#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sio: <http://semanticscience.org/resource/>.
+@prefix wd: <https://www.wikidata.org/wiki/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix fdp: <https://w3id.org/fdp/fdp-o#>.
+@prefix loc: <http://localhost:8080#>.
+@prefix pro: <http://localhost:8080/profile/>.
+@prefix n0: <https://creativecommons.org/licenses/by/4.0/>.
+@prefix met: <http://localhost:8080/metrics/>.
+@prefix c: <http://localhost:8080/catalog/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+
+<http://localhost:8080>
+    a dcat:DataService, dcat:Resource, fdp:FAIRDataPoint, fdp:MetadataService;
+    dct:accessRights loc:accessRights;
+    dct:conformsTo pro:77aaad6a-0136-4c6e-88b9-07ffccd0ee4c;
+    dct:description
+        "This dataset provides detailed information on Airbnb property listings, including geographic coordinates, property types, amenities, pricing, reviews, availability, and host information. The data enables a comprehensive analysis of rental trends, pricing factors, host reliability, and neighborhood characteristics across various locations. It supports a wide range of applications, such as market analysis, travel insights, real estate trends, and urban studies.";
+    dct:language language:en;
+    dct:license <http://purl.org/NET/rdflicense/cc-zero1.0>;
+    dct:publisher loc:publisher;
+    dct:rights n0:;
+    dct:title "Fair Berlin Airbnb Data Point";
+    sio:SIO_000628
+    met:445c0a70d1e214e545b261559e2842f4, met:5d27e854a9e78eb3f663331cd47cdc13;
+    r3d:repositoryIdentifier loc:identifier;
+    rdfs:label "Fair Berlin Airbnb Data Point";
+    dcat:endpointURL <http://localhost:8080>;
+    dcat:version "1.0";
+    fdp:fdpSoftwareVersion "FDP:v1.17.2~34fb697";
+    fdp:metadataCatalog c:86123242-a8e8-49fb-9570-a94d39a5dab2;
+    fdp:metadataIdentifier loc:identifier;
+    fdp:metadataIssued "2024-10-31T13:35:54.59586225Z"^^xsd:dateTime;
+    fdp:metadataModified "2024-11-08T19:21:43.630304382Z"^^xsd:dateTime.
+c:
+    a ldp:DirectContainer;
+    dct:title "Catalogs";
+    ldp:contains c:86123242-a8e8-49fb-9570-a94d39a5dab2;
+    ldp:hasMemberRelation fdp:metadataCatalog;
+    ldp:membershipResource <http://localhost:8080>.
+met:445c0a70d1e214e545b261559e2842f4
+    sio:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt>;
+    sio:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt>.
+met:5d27e854a9e78eb3f663331cd47cdc13
+sio:SIO_000332 wd:Q8777; sio:SIO_000628 wd:Q8777.
+pro:77aaad6a-0136-4c6e-88b9-07ffccd0ee4c rdfs:label "FAIR Data Point Profile".
+
+loc:accessRights
+    a dct:RightsStatement;
+    dct:description "This resource has no access restriction".
+loc:identifier a dcite:Identifier; dct:identifier "http://localhost:8080".
+
+loc:publisher a foaf:Agent; foaf:name "University of Twente".
